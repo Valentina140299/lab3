@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<form oninput="
+  lb.value=(kg.value*2.20462).toFixed(2);centner.value=(kg.value/100).toFixed(2);
+  result.value=(parseInt(first.value)+parseInt(second.value));
+  want.value=parseInt(range.value);
+  payment.value=(hours.value*(amount.value-tax.value)).toFixed(2);
+">
+<hr>
+  <p>Ваша вага, кг:
+    <input type="number" name="kg" autofocus></p>
+  <p>Вага в фунтах: <output name="lb">0.00</output></p>
+  <p>Вага в центнерах: <output name="centner">0.00</output></p>
+<hr>
+<p style="font-weight: bold; font-size: 20px">Введи 2 числа</p>
+  <table>
+    <tr>
+      <td><input type="number" value="0" name="first"></td>
+      <td>+</td>
+      <td><input type="number" value="0" name="second"></td>
+      <td>=</td>
+      <td><output name="result">0</output></td>
+    </tr>
+  </table>
+<hr>
+  <table>
+    <tr>
+      <td>0</td>
+      <td><input type="range" name="range" min="0" max="10000"></td>
+      <td>10000</td>
+    </tr>
+  </table>
+  <output name="want">5000</output>
+<hr>
+  <p style="font-size: 25px; font-weight: bold">Скільки хочешь заробляти</p>
+  <table>
+    <label>
+      Кількість годин
+      <input type="number" name="hours">
+    </label>
+    <label>
+      Ставка
+      <input type="number" name="amount">
+    </label>
+    <label>
+      Налог
+      <input type="number" name="tax">
+    </label>
+    <label>
+      зарплата <span style="font-weight: bold">грн
+      <output name="payment">0.00</output>
+      </span>
+    </label>
+  </table>
+<hr>
+  <table>
+  <tr>
+    <td>
+      <button type="reset">
+        Очистити
+      </button>
+    </td>
+    <td>
+      <button>
+        Відправити
+      </button>
+    </td>
+  </tr>
+  </table>
+</form>
+</body>
+</html>

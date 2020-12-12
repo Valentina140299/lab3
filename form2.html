@@ -1,0 +1,85 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<table>
+<form action="/signup" method="POST">
+  <tr>
+    <td><label>Логін:</label></td>
+    <td><input type="text" name="login"></td>
+  </tr>
+  <tr>
+    <td><label>Пароль:</label></td>
+    <td><input type="password" name="password"></td>
+  </tr>
+  <tr>
+    <td><label>Подтвердите пароль:</label></td>
+    <td><input type="password" name="password_confirm"></td>
+  </tr>
+  <tr>
+    <td><label>Стать:</label></td>
+    <td>
+      <label>
+        <input type="radio" name="title" value="mr">
+        чоловік
+      </label>
+      <label>
+        <input type="radio" name="title" value="mrs">
+        жінка
+      </label>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Вкажіть місто:</label></td>
+    <td>
+      <select name="country" multiple>
+        <option>Канада</option>
+        <option>Франция</option>
+        <option>Германия</option>
+        <option>Україна</option>
+        <option>Япония</option>
+        <option>Россия</option>
+        <option>Великобритания</option>
+        <option>США</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Інтереси:</label></td>
+    <td>
+      <label>
+        <input type="checkbox" name="title" value="футбол">
+        футбол
+      </label>
+      <label>
+        <input type="checkbox" name="title" value="шахи">
+        шахи
+      </label>
+      <label>
+        <input type="checkbox" name="title" value="малювання">
+        малювання
+      </label>
+      <label>
+        <input type="checkbox" name="title" value="музика">
+        музика
+      </label>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button type="reset">
+        Очистити
+      </button>
+    </td>
+    <td>
+      <button>
+        Відправити
+      </button>
+    </td>
+  </tr>
+</form>
+</table>
+
+</body>
+</html>
